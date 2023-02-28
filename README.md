@@ -1,2 +1,2 @@
-# H3-GNN
+# H3GNN
 This is the code we prepared for our manuscript that submitted to TNNLS.
