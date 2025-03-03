@@ -38,7 +38,7 @@ The hypergraph and multigraph data formats obtained here can be directly used in
 
 # Usage
 To run the code, you can use the following command:
-```bash
+
 
 
 # Citation
