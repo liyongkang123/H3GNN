@@ -33,13 +33,17 @@ The hypergraph and multigraph data formats obtained here can be directly used in
 
 
 # Requirements
-- Python 3.10, Pytorch, DGL, PyG etc.
+- Python 3.10, Pytorch, DGL, PyG, pytorch-scatter,torch_sparse, etc.
 - GPU is recommended with 48GB memory or more.
 
 # Usage
-To run the code, you can use the following command:
-
-
+To run the code, you can use the following command
+```
+python train_hyperbolic.py  \
+      --city CHI \
+      --manifold_name poincare 
+```
+You can check all the configurable parameters in the **config.py** file.
 
 # Citation
 If you find this work helpful, please consider citing our paper:
