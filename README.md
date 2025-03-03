@@ -14,6 +14,31 @@ Therefore, we have made the downloaded dataset available in [our Google Drive](h
 !!! Importantly, in this work, we have open-sourced the data preprocessing code, using the **Gowalla** dataset as an example.
 This includes instructions on how to construct the heterogeneous hypergraph and the heterogeneous multigraph in HMGCL. Please refer to the `data_preprocess` folder.
 
+### Data Processing Steps:
+
+1. **Download Raw Data**  
+   Download the raw data into the `data/yongliu_gowalla_data` folder.
+
+2. **Split Data by City**  
+   Run `data_preprocess/split_data_into_city.ipynb` to divide the global dataset into individual cities.
+
+3. **Build Hypergraph Data Format**  
+   Run `data_preprocess/build_hypergraph.ipynb` to generate the hypergraph data format for each city.
+
+4. **Build Multigraph Data Format**  
+   Run `data_preprocess/build_multigraph.ipynb` to generate the multigraph data format for each city.
+
+**Note:**  
+The hypergraph and multigraph data formats obtained here can be directly used in my previous [**HMGCL**](https://github.com/liyongkang123/HMGCL) and [**HHGNN**](https://github.com/liyongkang123/HHGNN) work, serving as baselines.
+
+
+# Requirements
+- Python 3.10, Pytorch, DGL, PyG etc.
+- GPU is recommended with 48GB memory or more.
+
+# Usage
+To run the code, you can use the following command:
+```bash
 
 
 # Citation
